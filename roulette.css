@@ -1,0 +1,722 @@
+body {
+
+cursor: context-menu;
+
+}
+
+h1 {
+
+text-align: center;
+color: orange;
+font-family: Verdana;
+background: darkgreen;
+margin-top: 0px;
+padding: 1px;
+
+}
+
+.roulette  {
+
+width: 810px;
+height: 550px;
+border: 1px solid gray;
+border-radius: 5px;
+background: black;
+margin-left: 220px;
+margin-top: 150px;
+background: darkolivegreen;
+
+}
+
+
+.gameBoard {
+
+margin-top: 60px;
+margin-left: 4px;
+width: 800px;
+height: 450px;
+border: 1px solid gray;
+border-radius: 5px;
+background: olivedrab;
+
+}
+
+
+
+.time  {
+
+margin-left: 5px; 
+margin-top: -55px;
+color: white;
+font-family: Verdana;
+
+}
+
+.rouletteCube  {
+
+width: 55px;
+height: 55px;
+border: 1px solid white;
+border-radius: 5px;
+display: inline-grid;
+
+}
+
+.main {
+
+margin-left: 30px;
+
+}
+
+.first  {
+
+width: 50px;
+height: 155px;
+border: 1px solid white;
+border-radius: 5px;
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+position: absolute;
+background: darkgreen;
+
+}
+
+.row1 {
+
+display: inline-block;
+width: 50px;
+height: 50px;
+border: 1px solid white;
+border-radius: 5px;
+margin-left: -3px;
+font-size: 33px;
+text-align: center;
+color: white;
+cursor: context-menu;
+
+}
+
+.complete  {
+
+margin-left: 56px;
+margin-top: 0px;
+
+}
+
+.complete2  {
+
+margin-left: 85px;
+margin-top: -1px;
+
+}
+
+.row2 {
+
+display: inline-block;
+width: 211px;
+height: 50px;
+border: 1px solid white;
+border-radius: 5px;
+margin-left: -4px;
+font-size: 40px;
+text-align: center;
+color: white;
+
+}
+
+.row3 {
+
+display: inline-block;
+width: 104.5px;
+height: 50px;
+border: 1px solid white;
+border-radius: 5px;
+margin-left: -4px;
+
+}
+
+.r3 {
+
+font-size: 38px;
+text-align: center;
+margin-top: 0px;
+
+}
+
+.r4:nth-child(odd) {
+
+background: indianred;
+color: indianred;
+
+}
+
+.r4:nth-child(even) {
+
+background: black;
+
+}
+
+.r5  {
+
+color: white;
+
+}
+
+.bet1  {
+
+color: white;
+margin-top: 65px;
+margin-left: 20px;
+font-family: Verdana;
+
+}
+
+.objectMoved {
+
+margin-top: -50px;
+
+}
+
+.spining  {
+
+position: absolute;
+width: 500px;
+height: 500px;
+border: 1px solid gray;
+border-radius: 500px;
+left: 400px;
+top: 200px;
+background: gray;
+visibility: hidden;
+
+}
+
+.circle  {
+
+width: 470px;
+height: 470px;
+border: 1px solid maroon;
+border-radius: 500px;
+left: 15px;
+top: 15px;
+background: maroon;
+position: absolute;
+
+}
+
+.wheel  {
+
+position: absolute;
+left: 32px;
+top: 32px;
+width: 400px;
+height: 400px;
+border: 5px solid chocolate;
+border-radius: 50%;
+background: repeating-conic-gradient(
+
+	crimson 0 9.5deg, black 9.5deg 19deg,
+    crimson 19deg 28.5deg, black 28.5deg 38deg,
+    crimson 38deg 47.5deg, black 47.5deg 57deg,
+    crimson 57deg 66.5deg, black 66.5deg 76deg,
+    crimson 76deg 85.5deg, black 85.5deg 95deg,
+    crimson 95deg 104.5deg, black 104.5deg 114deg,
+    crimson 114deg 123.5deg, black 123.5deg 133deg,
+    crimson 133deg 142.5deg, black 142.5deg 152deg,
+    crimson 152deg 161.5deg, black 161.5deg 171deg,
+    crimson 171deg 180.5deg, black 180.5deg 190deg,
+    crimson 190deg 199.5deg, black 199.5deg 209deg,
+    crimson 209deg 218.5deg, black 218.5deg 228deg,
+    crimson 228deg 237.5deg, black 237.5deg 247deg,
+    crimson 247deg 256.5deg, black 256.5deg 266deg,
+    crimson 266deg 275.5deg, black 275.5deg 285deg,
+    crimson 285deg 294.5deg, black 294.5deg 304deg,
+    crimson 304deg 313.5deg, darkgreen 313.5deg 323deg,
+    blue 323deg 332.5deg, black 332.5deg 342deg
+    
+	 );
+color: white;
+
+}
+
+.unit {
+
+position: absolute;
+font-family: Arial;
+
+}
+
+.one {
+
+left: 153px;
+top: 12px;
+transform: rotate(-18deg);
+
+}
+
+.two {
+
+left: 180px;
+top: 7px;
+transform: rotate(-9deg);
+
+}
+
+.four {
+
+left: 240px;
+top: 12px;
+transform: rotate(15deg);
+
+}
+
+.three {
+
+left: 208px;
+top: 6px;
+transform: rotate(0deg);
+
+}
+
+.five {
+
+left: 272px;
+top: 22px;
+transform: rotate(24deg);
+
+}
+
+.six {
+
+left: 297px;
+top: 37px;
+transform: rotate(40deg);
+
+}
+
+.eight {
+
+left: 345px;
+top: 77px;
+transform: rotate(55deg);
+
+}
+
+.seven {
+
+left: 322px;
+top: 54px;
+transform: rotate(42deg);
+
+}
+
+.nine {
+
+left: 359px;
+top: 102px;
+transform: rotate(65deg);
+
+}
+
+.ten {
+
+left: 365px;
+top: 129px;
+transform: rotate(71deg);
+
+}
+
+.eleven {
+
+left: 377px;
+top: 191px;
+transform: rotate(95deg);
+
+}
+
+.twelve {
+
+left: 374px;
+top: 160px;
+transform: rotate(86deg);
+
+}
+
+.fourteen {
+
+left: 374px;
+top: 221px;
+transform: rotate(109deg);
+
+}
+
+.thirteen {
+
+left: 367px;
+top: 249px;
+transform: rotate(115deg);
+
+
+}
+
+.fifteen {
+
+left: 338px;
+top: 302px;
+transform: rotate(125deg);
+
+}
+
+.sixteen {
+
+left: 356px;
+top: 277px;
+transform: rotate(120deg);
+
+}
+
+.eighteen {
+
+left: 318px;
+top: 325px;
+transform: rotate(135deg);
+
+}
+
+.seventeen {
+
+left: 293px;
+top: 346px;
+transform: rotate(145deg);
+
+}
+
+.twenty {
+
+left: 235px;
+top: 370px;
+transform: rotate(161deg);
+
+}
+
+.nineteen {
+
+left: 267px;
+top: 361px;
+transform: rotate(161deg);
+
+}
+
+.twentyone {
+
+left: 207px;
+top: 377px;
+transform: rotate(174deg);
+
+}
+
+.twentytwo {
+
+left: 175px;
+top: 375px;
+transform: rotate(180deg);
+
+}
+
+.twentyfour {
+
+left: 114px;
+top: 360px;
+transform: rotate(209deg);
+
+}
+
+.twentythree {
+
+left: 144px;
+top: 370px;
+transform: rotate(195deg);
+
+}
+
+.twentyfive {
+
+left: 89px;
+top: 345px;
+transform: rotate(217deg);
+
+}
+
+.twentysix {
+
+left: 67px;
+top: 328px;
+transform: rotate(225deg);
+
+}
+
+.twentyeight {
+
+left: 28px;
+top: 280px;
+transform: rotate(237deg);
+
+}
+
+.twentyseven {
+
+left: 47px;
+top: 306px;
+transform: rotate(228deg);
+
+}
+
+.thirty {
+
+left: 13px;
+top: 250px;
+transform: rotate(246deg);
+
+}
+
+.twentynine {
+
+left: 6px;
+top: 219px;
+transform: rotate(258deg);
+
+}
+
+.thirtyone {
+
+left: 8px;
+top: 157px;
+transform: rotate(278deg);
+
+}
+
+.thirtytwo {
+
+left: 5px;
+top: 187px;
+transform: rotate(270deg);
+
+}
+
+.thirtyfour {
+
+left: 15px;
+top: 127px;
+transform: rotate(290deg);
+
+}
+
+.thirtythree {
+
+left: 29px;
+top: 100px;
+transform: rotate(297deg);
+
+}
+
+.zero {
+
+left: 70px;
+top: 55px;
+transform: rotate(321deg);
+
+}
+
+.thirtyfive {
+
+left: 118px;
+top: 22px;
+transform: rotate(335deg);
+
+}
+
+.thirtysix {
+
+left: 46px;
+top: 75px;
+transform: rotate(306deg);
+
+}
+
+.thirtyseven {
+
+left: 95px;
+top: 35px;
+transform: rotate(328deg);
+
+}
+
+.movement  {
+
+width: 300px;
+height: 300px;
+border: 2px solid white;
+border-radius: 500px;
+margin-left: 50px;
+margin-top: 50px;
+
+}
+
+.ball  {
+
+width: 20px;
+height: 20px;
+border: 1px solid white;
+border-radius: 50px;
+background: white;
+position: absolute;
+left: 100px;
+top: 255px;
+
+}
+
+@keyframes anim {
+
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+
+}
+
+
+.twoForOne1, .twoForOne2, .twoForOne3,
+.fTwelve1, .sTwelve2, .tTwelve3, .f81, .s81,
+.oddNumbers, .evenNumbers, .redOne, .blackOne
+
+ {
+
+cursor: context-menu;
+
+}
+
+#quarter1 {
+
+
+}
+
+#quarter2 {
+
+	
+}
+
+#quarter3 {
+
+	
+}
+
+#ei18 {
+
+
+}
+
+#th36 {
+
+
+}
+
+#odd18 {
+
+
+}
+
+#even18 {
+
+
+}
+
+#red18 {
+
+
+}
+
+#black18 {
+
+	
+}
+
+.result {
+
+position: absolute;
+top: 30px;
+left: 500px;
+border: 1px solid green;
+border-radius: 50px;
+height: 40px;
+width: 200px;
+text-align: center;
+padding: 10px;
+font-family: Verdana;
+font-size: 27px;
+background: olivedrab;
+color: white;
+
+}
+
+.bettingChip {
+
+height: 25px; 
+width: 30px;
+border: 10px solid orange;
+border-radius: 50px;
+position: absolute;
+top: 550px;
+left: 350px;
+text-align: center;
+background: chocolate;
+color: white;
+font-family: Verdana;
+padding: 20px;
+
+}
+
+.money {
+
+text-align: center;
+margin-top: 50px;
+margin-left: 500px;
+font-family: Verdana;
+background: olivedrab;
+color: white;
+width: 200px;
+height: 20px;
+padding: 20px;
+border: 1px solid olivedrab;
+border-radius: 50px;
+
+}
+
+.entrance {
+
+color: white;
+margin-top: -50px;
+margin-left: 570px;
+font-family: Verdana;
+position: absolute;
+
+}
+
+.earn {
+
+margin-top: -29px;
+margin-left: 160px;
+
+}
+
+.spinWheel {
+
+margin-left: 590px;
+margin-top: 50px;
+color: white;
+font-family: Verdana;
+
+}
+
+.stopWheel {
+
+visibility: hidden;
+
+}

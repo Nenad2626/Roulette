@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Roulette</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Roulette game">
+<link rel="stylesheet" type="text/css" href="roulette.css">
+<link href="roulette.png" rel="icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+
+<div class="roulette">
+
+<div class="gameBoard">
+	
+<h1>ROULETTE</h1>
+<h2 class="time">0</h2>
+<h2 class="entrance">ENTRANCE: <div class="earn">0</div></h2>
+
+<div class="main">
+	
+<div class="first"><div class="bet1">0</div></div>
+
+<div class="complete">
+	
+<div class="row1" id="aColors">3</div>
+<div class="row1" id="aColors">6</div>
+<div class="row1" id="aColors">9</div>
+<div class="row1" id="aColors">12</div>
+<div class="row1" id="aColors">15</div>
+<div class="row1" id="aColors">18</div>
+<div class="row1" id="aColors">21</div>
+<div class="row1" id="aColors">24</div>
+<div class="row1" id="aColors">27</div>
+<div class="row1" id="aColors">30</div>
+<div class="row1" id="aColors">33</div>
+<div class="row1" id="aColors">36</div>
+<div class="row1" id="twoForOne1">2:1</div>
+
+</div>
+
+<div class="complete">
+	
+<div class="row1" id="bColors">2</div>
+<div class="row1" id="bColors">5</div>
+<div class="row1" id="bColors">8</div>
+<div class="row1" id="bColors">11</div>
+<div class="row1" id="bColors">14</div>
+<div class="row1" id="bColors">17</div>
+<div class="row1" id="bColors">20</div>
+<div class="row1" id="bColors">23</div>
+<div class="row1" id="bColors">26</div>
+<div class="row1" id="bColors">29</div>
+<div class="row1" id="bColors">32</div>
+<div class="row1" id="bColors">35</div>
+<div class="row1" id="twoForOne2">2:1</div>
+
+</div>
+
+<div class="complete">
+	
+<div class="row1" id="cColors">1</div>
+<div class="row1" id="cColors">4</div>
+<div class="row1" id="cColors">7</div>
+<div class="row1" id="cColors">10</div>
+<div class="row1" id="cColors">13</div>
+<div class="row1" id="cColors">16</div>
+<div class="row1" id="cColors">19</div>
+<div class="row1" id="cColors">22</div>
+<div class="row1" id="cColors">25</div>
+<div class="row1" id="cColors">28</div>
+<div class="row1" id="cColors">31</div>
+<div class="row1" id="cColors">34</div>
+<div class="row1" id="twoForOne3">2:1</div>
+
+</div>
+</div>
+
+<div class="complete2">
+
+<div class="row2" id="fTwelve1">1st 12</div>
+<div class="row2" id="sTwelve2">2nd 12</div>
+<div class="row2" id="tTwelve3">3rd 12</div>
+
+</div>
+
+<div class="complete2">
+
+<div class="row3 r3 r5" id="f81">1-18</div>
+<div class="row3 r3 r5" id="evenNumbers">Even</div>
+<div class="row3 r3 r4" id="redOne">X</div>
+<div class="row3 r3 r4" id="blackOne">X</div>
+<div class="row3 r3 r5" id="oddNumbers">Odd</div>
+<div class="row3 r3 r5" id="s81">19-36</div>
+
+</div>
+
+<div class="spinWheel">SPIN</div>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+<div class="bettingChip">1</div>
+
+</div>
+
+</div>
+ 
+
+<div class="spining">
+<div class="circle">
+<div class="wheel">
+	
+<div class="one unit">1</div>
+<div class="two unit">2</div>
+<div class="four unit">4</div>
+<div class="three unit">3</div>
+<div class="five unit">5</div>
+<div class="six unit">6</div>
+<div class="eight unit">8</div>
+<div class="seven unit">7</div>
+<div class="nine unit">9</div>
+<div class="ten unit">10</div>
+<div class="eleven unit">11</div>
+<div class="twelve unit">12</div>
+<div class="fourteen unit">14</div>
+<div class="thirteen unit">13</div>
+<div class="fifteen unit">15</div>
+<div class="sixteen unit">16</div>
+<div class="eighteen unit">18</div>
+<div class="seventeen unit">17</div>
+<div class="twenty unit">20</div>
+<div class="nineteen unit">19</div>
+<div class="twentyone unit">21</div>
+<div class="twentytwo unit">22</div>
+<div class="twentyfour unit">24</div>
+<div class="twentythree unit">23</div>
+<div class="twentyfive unit">25</div>
+<div class="twentysix unit">26</div>
+<div class="twentyeight unit">28</div>
+<div class="twentyseven unit">27</div>
+<div class="thirty unit">30</div>
+<div class="twentynine unit">29</div>
+<div class="thirtythree unit">33</div>
+<div class="thirtyone unit">31</div>
+<div class="thirtytwo unit">32</div>
+<div class="thirtyfour unit">34</div>
+<div class="zero unit">0</div>
+<div class="thirtyfive unit">35</div>
+<div class="thirtysix unit">36</div>
+<div class="thirtyseven unit">D</div>
+<div class="movement"><div class="ball"></div></div>
+
+</div>
+</div>
+</div>
+
+<div class="result">00</div>
+
+<div class="money">100000</div>
+<div class="stopWheel"></div>
+
+
+
+<script src="roulette.js"></script>
+
+</body>
+</html>
